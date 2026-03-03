@@ -1,0 +1,48 @@
+.button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  opacity: 85%;
+  height: 100px;
+  width: 300px;
+  border-radius: 35px;
+  border: 10px solid black;
+  font-family: "Do Hyeon";
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: azure; /* changes button background color to white */
+  color: black; /* changes button text color to black */
+  opacity: 85%;
+  transition: 1s;
+}
+
+.button_container {
+  margin: 100px 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.button_case {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+.color_box {
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Do Hyeon";
+  font-size: 75px;
+  height: 100px;
+  width: 800px;
+  border: 15px solid black;
+  border-radius: 50px;
+  margin: 0 0 30px 0;
+}
