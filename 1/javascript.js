@@ -10,7 +10,7 @@ const button = document.getElementById("button");
 //This is a function to change colors of the color_box
 
 function changeBox() {
-  colorBox.classList.toggle(colorRed);
+  colorBox.classList.toggle("color_box-red", true);
   console.log("Nothin Much, Mayne");
 }
 
