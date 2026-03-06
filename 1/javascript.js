@@ -1,13 +1,17 @@
 const colorBox = document.querySelector(".color_box");
-// const colorRed = document.querySelector(".color_box-red");
-// const colorAqua = document.querySelector(".color_box-aqua");
-// const colorGreen = document.querySelector(".color_box-green");
-// const colorPurple = document.querySelector(".color_box-purple");
 const button = document.getElementById("button");
+const saying = document.getElementById("message");
 
-//This is a function to change colors of the color_box
+const face = ["ʘ‿ʘ", "ಠ_ಥ", "(ʘᗩʘ')", "(°ロ°)☝", "¬_¬"];
 
-// message = ["STOP", "THE PAIN", "THIS IS HARRASSMENT", "911 HAS BEEN CALLED"];
+const message = [
+  "really?",
+  "STOP",
+  "ENOUGH",
+  "LAST CHANCE",
+  "DIALING 911",
+  "📞📞📞",
+];
 
 const colorArray = [
   "color_box-red",
@@ -16,9 +20,16 @@ const colorArray = [
   "color_box-purple",
 ];
 
-// colorArray.forEach((color) => {
-//   colorBox.classList.toggle(color);
-// });
+// This is a function to change the messages within the message box
+
+let error = 0;
+
+function messageBox() {
+  error = (error + 1) % message.length;
+  saying.textContent = message[error];
+}
+
+// This is a function to change colors of colorBox
 
 let index = 0;
 
@@ -26,7 +37,10 @@ function changeBox() {
   colorBox.classList.remove(colorArray[index]);
   index = (index + 1) % colorArray.length;
   colorBox.classList.add(colorArray[index]);
+  messageBox();
 }
+
+// This is a function used to change the face of the coloBox
 
 // This is a function to execute changebox() when clicking the *CLICK ME* button
 

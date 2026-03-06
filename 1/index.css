@@ -29,7 +29,7 @@
 
 .button_case {
   width: 50%;
-  height: 50%;
+  height: 30%;
   text-align: center;
 }
 
@@ -107,4 +107,23 @@
   margin: 0 0 30px 0;
 }
 
-@media;
+.message_box {
+  border: 10px solid black;
+  border-radius: 10px;
+  font-family: "Do Hyeon";
+  font-size: 20px;
+  color: red;
+  height: 70px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  font-family: "Do Hyeon";
+  font-size: 20px;
+  color: black;
+}
+
+/* @media; */
