@@ -2,21 +2,30 @@ const colorBox = document.querySelector(".color_box");
 const button = document.getElementById("button");
 const saying = document.getElementById("message");
 
-const face = ["ʘ‿ʘ", "ಠ_ಥ", "(ʘᗩʘ')", "(°ロ°)☝", "¬_¬"];
+const face = [
+  "BUSTED",
+  "ಠ_ಥ",
+  "(ʘᗩʘ')",
+  "(°ロ°)☝",
+  "ʘ‿ʘ",
+  "(；一_一)",
+  "༼ ºل͟º ༼ ºل͟º ༽ ºل͟º ༽",
+];
 
 const message = [
-  "really?",
+  "BUSTED",
   "STOP",
   "ENOUGH",
   "LAST CHANCE",
   "DIALING 911",
   "📞📞📞",
+  "POLICE",
 ];
 
 const colorArray = [
   "color_box-red",
-  "color_box-aqua",
-  "color_box-green",
+  "color_box-yellow",
+  "color_box-orange",
   "color_box-purple",
 ];
 
@@ -38,9 +47,17 @@ function changeBox() {
   index = (index + 1) % colorArray.length;
   colorBox.classList.add(colorArray[index]);
   messageBox();
+  faceBox();
 }
 
-// This is a function used to change the face of the coloBox
+// This is a function used to change the face of the colorBox
+
+let expression = 0;
+
+function faceBox() {
+  expression = (expression + 1) % face.length;
+  colorBox.textContent = face[expression];
+}
 
 // This is a function to execute changebox() when clicking the *CLICK ME* button
 

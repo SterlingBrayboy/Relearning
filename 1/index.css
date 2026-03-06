@@ -29,7 +29,7 @@
 
 .button_case {
   width: 50%;
-  height: 30%;
+  height: 20%;
   text-align: center;
 }
 
@@ -62,8 +62,8 @@
   margin: 0 0 30px 0;
 }
 
-.color_box-aqua {
-  background-color: aqua;
+.color_box-yellow {
+  background-color: yellow;
   transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
@@ -77,8 +77,8 @@
   margin: 0 0 30px 0;
 }
 
-.color_box-green {
-  background-color: green;
+.color_box-orange {
+  background-color: orange;
   transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
@@ -122,7 +122,7 @@
 
 .message {
   font-family: "Do Hyeon";
-  font-size: 20px;
+  font-size: 30px;
   color: black;
 }
 
