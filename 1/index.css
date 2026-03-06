@@ -64,6 +64,7 @@
 
 .color_box-aqua {
   background-color: aqua;
+  transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,6 +79,7 @@
 
 .color_box-green {
   background-color: green;
+  transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,6 +94,7 @@
 
 .color_box-purple {
   background-color: purple;
+  transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,3 +106,5 @@
   border-radius: 50px;
   margin: 0 0 30px 0;
 }
+
+@media;
